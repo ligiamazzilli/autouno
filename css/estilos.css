@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*--------- Fuentes de google ---------*/
+
+@font-face {
+	font-family: TRegular;
+	src: url('../fuentes/TitilliumWeb-Regular.ttf'),
+	     url('../fuentes/TitilliumWeb-Regular.eot'); /* IE9 - falta esa extencion*/
+}
+
+@font-face {
+	font-family: TSemiBold;
+	src: url('../fuentes/TitilliumWeb-SemiBold.ttf'),
+	     url('../fuentes/TitilliumWeb-SemiBold.eot'); /* IE9 - falta esa extencion*/
+}
+
+@font-face {
+	font-family: TBold;
+	src: url('../fuentes/TitilliumWeb-Bold.ttf'),
+	     url('../fuentes/TitilliumWeb-Bold.eot'); /* IE9 - falta esa extencion*/
+}
+
+
+/*----- Estilos de texto ------*/
+
+h1 { 							/*para navegador,*/
+	font-family: TSemiBold;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding-top: 35px; /*para navegador: separa del icono*/
+}
+
+h2 {						/*texto slider 01*/
+	font-family: TBold;
+	text-transform: uppercase;
+	font-size: 38px;
+	line-height: 46px;
+	color: #FFFFFF;
+}
+
+h3 {						/*texto slider 02*/
+	font-family: TRegular;	
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+h4 {						/*numeros de telefono grandes*/
+	font-family: TBold;
+	font-size: 30px;
+	color: #FFFFFF
+}
+
+h5 {						/*numeros de telefono chicos*/
+	font-family: TBold;
+	font-size: 24px;
+	color: #FFFFFF
+}
+
+/*--------------------------- COMIENZO DEL HEADER -------------------------------*/
+
+#wrapper-header {
+	background-image: url('../img/bg_header.jpg');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	height: 500px;
+	width: 100%;
+}
+
+/*--- navegador ---*/
+
+#nav-wrapper {
+	height: 100px;
+	width: 100%;
+	background-image: url('../img/bg_negro.png');
+	background-repeat: repeat;
+}
+
+#nav-wrapper ul {
+	list-style-type: none;
+}
+
+#nav-wrapper ul li {
+	text-align: center;
+	float: left;
+}
+
+#nav-wrapper ul li.nav-item-logo {
+	margin: 15px 50px;
+}
+
+#nav-wrapper ul li.nav-item {
+	margin: 15px 10px;
+}
+
+#nav-wrapper ul li.nav-item a {
+	text-decoration: none;
+	background-position: center top;
+	background-repeat: no-repeat; 
+	height: 24px;
+	width: 185px;
+	margin: 10px auto;
+	display: block;
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	    -ms-transition: all 0.5s;
+	     -o-transition: all 0.5s;
+	        transition: all 0.5s;
+}
+
+#nav-wrapper li.nav-item a:active, #nav-wrapper ul li.nav-item a:hover {
+	background-position: center bottom;
+}
+
+#nav-wrapper li a:hover h1 {
+	color: #E31930;
+}
+
+#nav-item-contacto a {
+	background-image: url('../img/icon_contacto.png');
+}
+
+#nav-item-pregunta a {
+	background-image: url('../img/icon_pregunta.png');
+}
+
+#nav-item-condiciones a {
+	background-image: url('../img/icon_condiciones.png');
+}
+
+#nav-item-info a {
+	background-image: url('../img/icon_info.png');
+}
+
+#nav-item-flota a {
+	background-image: url('../img/icon_flota.png');
+}
+
+/*--- fin navegador ---*/
+
+#banderas ul {
+	list-style-type: none;
+	margin-right: 80px;
+	margin-top: 10px;
+}
+
+#banderas ul li {
+	text-decoration: none;
+	float: right;
+	text-align: right;
+	margin-left: 10px;
+}
+
+#slider-texto {
+	width: 520px;
+	margin-left: 50px;
+	margin-top: 140px;
+}
+
+#slider-txt01, #slider-txt02 {
+	background-image: url('../img/bg_negro.png');
+	margin-bottom: 16px;
+	padding: 10px 20px;
+}
+
+#slider-txt02 {
+	width: 335px;
+}
+
+#telefono {
+	width: 310px;
+	background-image: url('../img/bg_negro.png');
+	background-repeat: repeat;
+	z-index: 1;
+	position: absolute;
+	left: 505px;
+	padding: 10px 20px;
+	bottom: 30px;
+}
+
+#telefono-icono, #telefono-texto {
+	float: left;
+}
+
+#telefono-texto h5, #telefono-texto h4 {
+	float: left;	
+}
+
+/*--------------------------- fin DEL HEADER -------------------------------*/
+
+/*--------------------------- COMIENZO DEL FOOTER -------------------------------*/
+
+#footer-top {
+	width: 100%;
+	height: 4px;
+	background-color: #B0B1B1;
+}
+
+#footer-inner {
+	width: 1116px;
+	margin: 0 auto;
+}
+
+#footer-item-1, #footer-item-2, #footer-item-3 {
+	float: left;
+}
+
+/*--------------------------- fin DEL FOOTER -------------------------------*/
